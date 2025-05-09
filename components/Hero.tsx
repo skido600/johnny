@@ -3,21 +3,21 @@ import { Typewriter } from "react-simple-typewriter";
 
 function Hero() {
   return (
-    <section className="flex flex-col mt-[12rem]  justify-center items-center text-center px-4">
+    <section className="flex flex-col md:mt-[12rem] mt-[10rem]  justify-center items-center text-center px-4">
       <main className="max-w-4xl mx-auto">
         <div className="lg:w-[70%] w-[85%] m-auto">
-          <h6 className="text-[#D1D5DB] flex items-center gap-x-4 text-[15px] font-medium mb-2 md:text-base lg:text-lg">
-            <div> Welcome to </div>
-            <div>
+          <div className="text-[#D1D5DB] flex items-center justify-center mb-4 gap-x-4 text-[20px] font-medium  md:text-base lg:text-lg">
+            <p> Welcome to </p>
+            <p>
               {" "}
               <h1 className="flex items-center text-white font-semibold text-[12px] md:text-[15px]">
                 Johnny {"  "}
                 <span className="text-2xl text-[#758173]">T</span>ech {"  "}
                 <span className="text-2xl text-[#758173]">A</span>cademy
               </h1>
-            </div>
-          </h6>
-          <h3 className="text-3xl md:text-4xl lg:text-5xl font-sans tracking-tight text-white font-[900] mb-3">
+            </p>
+          </div>
+          <h3 className="text-3xl md:text-4xl mb-4 lg:text-5xl font-sans tracking-tight text-white font-[900] ">
             Empowering the next generation in{" "}
             <span className="text-[#758173]">
               <Typewriter

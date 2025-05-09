@@ -38,7 +38,7 @@ export function DesktopNav() {
     <main>
       <section className="relative">
         {/* Main navigation bar */}
-        <nav className="flex items-center justify-between mx-3 lg:mx-64 md:mx-28 fixed border border-[#242424] my-4 top-0 right-0 left-0 px-8 py-3 rounded-full bmd_2 bg-[#121212] z-50">
+        <nav className="flex items-center justify-between mx-3 lg:mx-64 md:mx-28 fixed border border-[#242424] my-4 top-0 right-0 left-0 px-8 py-3 rounded-full  bg-black/40  backdrop-blur-md  z-50">
           <h1 className="flex items-center text-white font-semibold text-[12px] md:text-[15px]">
             Johnny {"  "}
             <span className="text-2xl text-[#758173]">T</span>ech {"  "}
@@ -72,7 +72,7 @@ export function DesktopNav() {
 function MobileNav() {
   return (
     <div className="fixed top-20 left-0 right-0 z-40 animate-slideDown">
-      <div className="mx-4 border border-[#242424]  bmd_2  bg-[#121212] rounded-4xl p-6 shadow-xl">
+      <div className="mx-4 border border-[#242424] bg-black/40 backdrop-blur-md  rounded-4xl p-6 shadow-xl">
         <section className=" gap-6">
           <aside>
             <ul className="space-y-6 text-white">
