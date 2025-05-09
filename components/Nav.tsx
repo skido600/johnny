@@ -11,9 +11,8 @@ type NavItem = {
 const navigator: NavItem[] = [
   { name: "Home", link: "/" },
   { name: "Programs", link: "/" },
-  { name: "Admissions", link: "/" },
   { name: "About Us", link: "/" },
-  { name: " Blog / Resources", link: "/" },
+  { name: " Blog", link: "/" },
   { name: "Contact", link: "/" },
 ];
 
