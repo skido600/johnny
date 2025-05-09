@@ -8,14 +8,14 @@ function Hero() {
         <div className="lg:w-[70%] w-[85%] m-auto">
           <div className="text-[#D1D5DB] flex items-center justify-center mb-4 gap-x-4 text-[20px] font-medium  md:text-base lg:text-lg">
             <p> Welcome to </p>
-            <p>
+            <div>
               {" "}
               <h1 className="flex items-center text-white font-semibold text-[12px] md:text-[15px]">
                 Johnny {"  "}
                 <span className="text-2xl text-[#758173]">T</span>ech {"  "}
                 <span className="text-2xl text-[#758173]">A</span>cademy
               </h1>
-            </p>
+            </div>
           </div>
           <h3 className="text-3xl md:text-4xl mb-4 lg:text-5xl font-sans tracking-tight text-white font-[900] ">
             Empowering the next generation in{" "}

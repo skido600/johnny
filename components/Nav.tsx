@@ -68,12 +68,11 @@ export function DesktopNav() {
     </main>
   );
 }
-
 function MobileNav() {
   return (
-    <div className="fixed top-20 left-0 right-0 z-40 animate-slideDown">
-      <div className="mx-4 border border-[#242424] bg-black/40 backdrop-blur-md  rounded-4xl p-6 shadow-xl">
-        <section className=" gap-6">
+    <div className="fixed top-20 left-0 right-0 z-50 animate-slideDown">
+      <div className="mx-4 border border-[#242424] bg-black/40 backdrop-blur-md z-50 rounded-4xl p-6">
+        <section className="gap-6">
           <aside>
             <ul className="space-y-6 text-white">
               {navigator.map((items, index) => (
