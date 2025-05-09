@@ -2,15 +2,15 @@
 import { useEffect, useState } from "react";
 import { LuMenu } from "react-icons/lu";
 import { IoMdClose } from "react-icons/io";
-
+import { Link } from "react-scroll";
 type NavItem = {
   name: string;
   link: string;
 };
 
 const navigator: NavItem[] = [
-  { name: "Home", link: "/" },
-  { name: "Programs", link: "#programs-section" },
+  { name: "Home", link: "home" },
+  { name: "Programs", link: "programs-section" },
   { name: "About Us", link: "/" },
   { name: " Blog", link: "/" },
   { name: "Contact", link: "/" },
@@ -48,11 +48,14 @@ export function DesktopNav() {
           <ul className="md:flex items-center space-x-4 text-white hidden">
             {navigator.map((items, index) => (
               <li key={index}>
-                <a
-                  href={items.link}
+                <Link
+                  to={items.link}
+                  smooth={false}
+                  duration={500}
+                  offset={-100}
                   className="cursor-pointer hover:text-gray-300">
                   {items.name}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
@@ -64,15 +67,17 @@ export function DesktopNav() {
               <LuMenu size={30} className="text-white" />
             )}
           </div>
-          {toggle && <MobileNav />}
+          {toggle && <MobileNav setToggle={setToggle} />}
         </nav>
-
-        {/* Mobile navigation dropdown */}
       </section>
     </main>
   );
 }
-function MobileNav() {
+type MobileNavProps = {
+  setToggle: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+function MobileNav({ setToggle }: MobileNavProps) {
   return (
     <div className="fixed top-20 left-0 right-0 z-50 animate-slideDown">
       <div className="mx-4 border border-[#242424] bg-black/40 backdrop-blur-md z-50 rounded-4xl p-6">
@@ -81,11 +86,15 @@ function MobileNav() {
             <ul className="space-y-6 text-white">
               {navigator.map((items, index) => (
                 <li key={index}>
-                  <a
-                    href={items.link}
-                    className="cursor-pointer hover:text-gray-300 text-[12px]">
+                  <Link
+                    to={items.link}
+                    className="cursor-pointer hover:text-gray-300 text-[12px]"
+                    smooth={false}
+                    duration={500}
+                    offset={-100}
+                    onClick={() => setToggle(false)}>
                     {items.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
