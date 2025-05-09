@@ -39,7 +39,10 @@ function Pricing_cli({ data }: Props) {
               <span className="text-green-400">✓</span> {item.li_3}
             </li>
           </ul>
-          <button className="px-6 py-2 mt-8 bg-[#314C2D] text-white rounded-full transition">
+          {/* <button className="mt-6 shadow-2xl drop-shadow-2xl bg-[#314C2D] md:w-64 text-white font-semibold py-2 px-4 rounded-full transition">
+            Enroll Now
+          </button> */}
+          <button className="mt-7 bg-[#314C2D]  drop-shadow-2xl md:w-64 w-full text-white font-semibold py-2 px-4 rounded-full transition">
             Enroll Now
           </button>
         </div>
@@ -70,7 +73,7 @@ function Pricing_cli({ data }: Props) {
             </li>
           </ul>
 
-          <button className="mt-auto bg-[#314C2D] md:w-64 text-white font-semibold py-2 px-4 rounded-full transition">
+          <button className="mt-auto bg-[#314C2D]  drop-shadow-2xl md:w-64 text-white font-semibold py-2 px-4 rounded-full transition">
             Enroll Now
           </button>
         </div>

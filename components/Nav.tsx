@@ -67,9 +67,9 @@ export function DesktopNav() {
               <LuMenu size={30} className="text-white" />
             )}
           </div>
-          {toggle && <MobileNav setToggle={setToggle} />}
         </nav>
       </section>
+      {toggle && <MobileNav setToggle={setToggle} />}
     </main>
   );
 }
@@ -79,8 +79,8 @@ type MobileNavProps = {
 
 function MobileNav({ setToggle }: MobileNavProps) {
   return (
-    <div className="fixed top-20 left-0 right-0 z-50 animate-slideDown">
-      <div className="mx-4 border border-[#242424] bg-black/40 backdrop-blur-md z-50 rounded-4xl p-6">
+    <div className="fixed top-20 left-0 right-0 z-50 animate-slideDown mx-4 border border-[#242424] bg-black/40   backdrop-blur-md  rounded-4xl p-6">
+      <div className="">
         <section className="gap-6">
           <aside>
             <ul className="space-y-6 text-white">
