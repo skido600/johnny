@@ -1,6 +1,6 @@
 import Hero from "@/components/Hero";
 import { DesktopNav } from "@/components/Nav";
-import Prices from "@/components/Prices";
+// import Prices from "@/components/Prices";
 import Program from "@/components/Program";
 export default function Home() {
   return (
@@ -8,7 +8,7 @@ export default function Home() {
       <DesktopNav />
       <Hero />
       <Program />
-      <Prices />
+      {/* <Prices /> */}
     </>
   );
 }

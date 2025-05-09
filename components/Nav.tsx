@@ -10,7 +10,7 @@ type NavItem = {
 
 const navigator: NavItem[] = [
   { name: "Home", link: "/" },
-  { name: "Programs", link: "/" },
+  { name: "Programs", link: "#programs-section" },
   { name: "About Us", link: "/" },
   { name: " Blog", link: "/" },
   { name: "Contact", link: "/" },
@@ -47,8 +47,12 @@ export function DesktopNav() {
 
           <ul className="md:flex items-center space-x-4 text-white hidden">
             {navigator.map((items, index) => (
-              <li key={index} className="cursor-pointer hover:text-gray-300">
-                {items.name}
+              <li key={index}>
+                <a
+                  href={items.link}
+                  className="cursor-pointer hover:text-gray-300">
+                  {items.name}
+                </a>
               </li>
             ))}
           </ul>
@@ -76,10 +80,12 @@ function MobileNav() {
           <aside>
             <ul className="space-y-6 text-white">
               {navigator.map((items, index) => (
-                <li
-                  key={index}
-                  className="cursor-pointer hover:text-gray-300 text-[12px]">
-                  {items.name}
+                <li key={index}>
+                  <a
+                    href={items.link}
+                    className="cursor-pointer hover:text-gray-300 text-[12px]">
+                    {items.name}
+                  </a>
                 </li>
               ))}
             </ul>
