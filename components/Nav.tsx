@@ -11,7 +11,7 @@ type NavItem = {
 const navigator: NavItem[] = [
   { name: "Home", link: "home" },
   { name: "Programs", link: "programs-section" },
-  { name: "About Us", link: "/" },
+  { name: "About Us", link: "about-section" },
   { name: " Blog", link: "/" },
   { name: "Contact", link: "/" },
 ];
@@ -88,7 +88,7 @@ function MobileNav({ setToggle }: MobileNavProps) {
                 <li key={index}>
                   <Link
                     to={items.link}
-                    className="cursor-pointer hover:text-gray-300 text-[12px]"
+                    className="cursor-pointer hover:text-gray-300 text-[16px]"
                     smooth={false}
                     duration={500}
                     offset={-100}

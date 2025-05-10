@@ -42,9 +42,7 @@ function Hero() {
               Learn cutting-edge skills and start your journey toward creative
               and technological excellence.
             </p>
-            {/* <h2 className="text-xl md:text-2xl font-medium mb-6 text-gray-700">
-            Empowering the next generation in{" "}
-          </h2> */}
+
             <p className="max-w-xl text-gray-600 text-base md:text-lg text-center"></p>
           </div>
         </main>

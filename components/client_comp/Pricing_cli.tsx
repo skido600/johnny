@@ -42,9 +42,11 @@ function Pricing_cli({ data }: Props) {
           {/* <button className="mt-6 shadow-2xl drop-shadow-2xl bg-[#314C2D] md:w-64 text-white font-semibold py-2 px-4 rounded-full transition">
             Enroll Now
           </button> */}
-          <button className="mt-7 bg-[#314C2D]  drop-shadow-2xl md:w-64 w-full text-white font-semibold py-2 px-4 rounded-full transition">
-            Enroll Now
-          </button>
+          <a href="https://whatsapp.com/channel/0029Vb5enxWDuMRgwFK6w13v">
+            <button className="mt-7 bg-[#314C2D]  drop-shadow-2xl md:w-64 w-full text-white font-semibold py-2 px-4 rounded-full transition">
+              Enroll Now
+            </button>
+          </a>
         </div>
       ))}
 
@@ -72,10 +74,11 @@ function Pricing_cli({ data }: Props) {
               <span className="text-[#314C2D]">★</span> {item.li_3}
             </li>
           </ul>
-
-          <button className="mt-auto bg-[#314C2D]  drop-shadow-2xl md:w-64 text-white font-semibold py-2 px-4 rounded-full transition">
-            Enroll Now
-          </button>
+          <a href="https://whatsapp.com/channel/0029Vb5enxWDuMRgwFK6w13v">
+            <button className="mt-7 bg-[#314C2D]  drop-shadow-2xl md:w-64 w-full text-white font-semibold py-2 px-4 rounded-full transition">
+              Enroll Now
+            </button>
+          </a>
         </div>
       ))}
 
@@ -103,10 +106,11 @@ function Pricing_cli({ data }: Props) {
               <span className="text-[#314C2D]">★</span> {item.li_3}
             </li>
           </ul>
-
-          <button className="mt-auto bg-[#314C2D] md:w-64 text-white font-semibold py-2 px-4 rounded-full transition">
-            Enroll Now
-          </button>
+          <a href="https://whatsapp.com/channel/0029Vb5enxWDuMRgwFK6w13v">
+            <button className="mt-7 bg-[#314C2D]  drop-shadow-2xl md:w-64 w-full text-white font-semibold py-2 px-4 rounded-full transition">
+              Enroll Now
+            </button>
+          </a>
         </div>
       ))}
     </section>

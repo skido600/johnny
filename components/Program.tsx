@@ -1,7 +1,3 @@
-// components/ScrollProgram.tsx
-"use client";
-
-import { Element } from "react-scroll";
 import Program_cl from "./client_comp/Program_cl";
 import Prices from "./Prices";
 
@@ -30,16 +26,11 @@ export default function ScrollProgram() {
   ];
 
   return (
-    <Element name="programs-section">
+    <>
       <main className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-3xl font-bold text-white mb-4">Programs</h1>
-        <p className="mb-8 text-gray-300">
-          These are the programs we offer to help you master creativity and
-          technology:
-        </p>
         <Program_cl data={data} />
       </main>
       <Prices />
-    </Element>
+    </>
   );
 }
