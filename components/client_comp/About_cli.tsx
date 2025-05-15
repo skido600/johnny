@@ -1,14 +1,8 @@
 "use client";
-import Image from "next/image";
+
 import { Element } from "react-scroll";
-import { Swiper, SwiperSlide } from "swiper/react";
+import Swiper_slid from "./Swiper_slid";
 
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-
-// import required modules
-import { Pagination, Autoplay } from "swiper/modules";
 type Data = {
   title: string;
   article: string;
@@ -17,20 +11,6 @@ type Data = {
 type Props = {
   data: Data[];
 };
-
-const images = [
-  "/WE/andrea-de-santis-zwd435-ewb4-unsplash.jpg",
-  "/WE/steve-johnson-_0iV9LmPDn0-unsplash.jpg",
-  "/WE/igor-omilaev-eGGFZ5X2LnA-unsplash.jpg",
-  "/WE/jakob-owens-EWaoo-i7qIs-unsplash.jpg",
-  "/WE/julien-tromeur-FYOwBvRb2Mk-unsplash.jpg",
-  "/WE/neeqolah-creative-works-n_Gd5nnamnw-unsplash.jpg",
-  "/WE/peter-olexa-okKjoUQNVDg-unsplash.jpg",
-  "/WE/peter-stumpf-yk9VXp4W5-Q-unsplash.jpg",
-  "/WE/tom-caillarec-tnTIhgeeRzE-unsplash.jpg",
-  "/WE/tran-mau-tri-tam-g-pKprPg5yw-unsplash.jpg",
-  "/WE/yizheng-duanmu-tXFbYqCimhI-unsplash.jpg",
-];
 
 function About_cli({ data }: Props) {
   return (
@@ -62,32 +42,7 @@ function About_cli({ data }: Props) {
 
         {/* Swiper Image Carousel Section */}
         <section className="mx-2 my-1 md:mx-0 py-8">
-          <Swiper
-            modules={[Pagination, Autoplay]}
-            slidesPerView={1}
-            loop={true}
-            autoplay={{
-              delay: 3000,
-              disableOnInteraction: false,
-            }}
-            pagination={{
-              clickable: true,
-              dynamicBullets: true,
-            }}
-            className="mySwiper h-64 md:h-96">
-            {images.map((src) => (
-              <SwiperSlide key={src}>
-                <div className="relative h-full w-full">
-                  <Image
-                    src={src}
-                    alt="Student collaboration"
-                    fill
-                    className="object-cover "
-                  />
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+          <Swiper_slid />
         </section>
       </main>
     </Element>
