@@ -12,8 +12,8 @@ const navigator: NavItem[] = [
   { name: "Home", link: "home" },
   { name: "Programs", link: "programs-section" },
   { name: "About Us", link: "about-section" },
-  { name: " Blog", link: "/" },
-  { name: "Contact", link: "/" },
+  // { name: " Blog", link: "/" },
+  { name: "Contact", link: "contact" },
 ];
 
 export function DesktopNav() {
