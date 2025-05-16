@@ -35,14 +35,13 @@ export const metadata: Metadata = {
   openGraph: {
     images: [
       {
-        url: "/opengraph-image.png",
+        url: "/https://johnny-tech-academy.vercel.app/opengraph-image.png",
         width: 1200,
         height: 630,
       },
     ],
 
-    title:
-      "Johnny Tech Academy  | Video Editing |Graphic Design | AI for Creatives | ",
+    title: "Johnny Tech Academy  | Video | Graphic |AI  ",
     description:
       "Creative Video Editing Graphic Design  AI for Creatives for brands across Africa and beyond.",
     type: "website",
