@@ -12,13 +12,13 @@ type Props = {
 function Program_cl({ data }: Props) {
   return (
     <Element name="programs-section">
-   
+      <section>
         <h1 className="text-3xl font-bold text-white mb-4">Programs</h1>
         <p className="mb-8 text-gray-300">
           These are the programs we offer to help you master creativity and
           technology:
         </p>
-        <section className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <article className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {data.map((item, index) => (
             <div
               key={index}
@@ -27,8 +27,8 @@ function Program_cl({ data }: Props) {
               <p className="text-[#F9F1F7] mt-4 text-sm">{item.article}</p>
             </div>
           ))}
-        </section>
-      {/* </main> */}
+        </article>
+      </section>
     </Element>
   );
 }

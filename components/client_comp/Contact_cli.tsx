@@ -29,9 +29,9 @@ function Contact_cli() {
   };
 
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
+    <section className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
       <div className="p-6">
-        <h2 className="text-xl font-bold">Send a Message</h2>
+        <h1 className="text-xl font-bold">Send a Message</h1>
         <p className="text-gray-500 text-sm mt-1">
           I&apos;ll get back to you as soon as possible.
         </p>
@@ -88,7 +88,7 @@ function Contact_cli() {
           </div>
         )}
       </form>
-    </div>
+    </section>
   );
 }
 

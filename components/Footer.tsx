@@ -2,7 +2,7 @@
 import {
   FaTwitter,
   FaInstagram,
-  FaLinkedinIn,
+  // FaLinkedinIn,
   FaFacebookF,
 } from "react-icons/fa";
 
@@ -19,10 +19,19 @@ const navigator: NavItem[] = [
   { name: "Contact", link: "contact" },
 ];
 const data = [
-  { link: "twitter", icon: FaTwitter },
-  { link: "instagram", icon: FaInstagram },
-  { link: "linkedin", icon: FaLinkedinIn },
-  { link: "facebook", icon: FaFacebookF }, // lowercase here
+  {
+    link: "https://x.com/JohnnyTech23?t=zojtZHzjh1h15jidXCtCMA&s=09",
+    icon: FaTwitter,
+  },
+  {
+    link: "https://www.instagram.com/johnnytechacademy?igsh=MTcyOWF5NmQ5Ym95bA%3D%3D",
+    icon: FaInstagram,
+  },
+  // { link: "linkedin", icon: FaLinkedinIn },
+  {
+    link: "https://web.facebook.com/people/Johnny-Tech/61575041944316/",
+    icon: FaFacebookF,
+  },
 ];
 export default function Footer() {
   return (

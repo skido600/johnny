@@ -2,7 +2,6 @@
 
 import { Element } from "react-scroll";
 import Swiper_slid from "./Swiper_slid";
-
 type Data = {
   title: string;
   article: string;

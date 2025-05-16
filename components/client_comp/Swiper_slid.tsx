@@ -14,6 +14,8 @@ const images = [
   "/WE/tom-caillarec-tnTIhgeeRzE-unsplash.jpg",
   "/WE/tran-mau-tri-tam-g-pKprPg5yw-unsplash.jpg",
   "/WE/yizheng-duanmu-tXFbYqCimhI-unsplash.jpg",
+  "/WE/WhatsApp Image 2025-05-06 at 6.45.22 PM.jpeg",
+  "/WE/WhatsApp Image 2025-05-06 at 6.58.27 PM.jpeg",
 ];
 import { Swiper, SwiperSlide } from "swiper/react";
 // import required modules
