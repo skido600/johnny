@@ -1,36 +1,134 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ✨ Johnny Tech Academy - Empowering Creatives with Tech! ✨
 
-## Getting Started
+Welcome to Johnny Tech Academy, where creativity meets technology! 🚀 We offer hands-on courses in video editing, graphic design, and AI tools to help you unlock your creative potential and stay ahead in the digital world.
 
-First, run the development server:
+## 💻 Installation
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Get started with Johnny Tech Academy by following these simple steps:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- ⬇️ **Clone the Repository**:
+  ```bash
+  git clone https://github.com/skido600/johnny.git
+  ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- 📂 **Navigate to the Project Directory**:
+  ```bash
+  cd port
+  ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- 📦 **Install Dependencies**:
+  ```bash
+  npm install
+  # or
+  yarn install
+  # or
+  pnpm install
+  ```
 
-## Learn More
+- 🚀 **Run the Development Server**:
+  ```bash
+  npm run dev
+  # or
+  yarn dev
+  # or
+  pnpm dev
+  ```
 
-To learn more about Next.js, take a look at the following resources:
+- 🎉 **Open in Browser**:
+  Visit `http://localhost:3000` to view the application.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠️ Usage
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Example Usage
 
-## Deploy on Vercel
+#### Navigating the Site
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Our site is designed with smooth scrolling in mind. Use the navigation bar to jump to different sections:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Home**: Introduces Johnny Tech Academy and its mission.
+- **Programs**: Showcases our courses in video editing, graphic design, and AI.
+- **About Us**: Learn about our team and what we stand for.
+- **Contact**: Get in touch with us through our contact form or social media.
+
+<details>
+<summary><b>Detailed Instructions</b></summary>
+
+#### Setting up environment variables:
+  Since there are no environment variables required at the moment. You can skip this step. But in the future, if required the steps are:
+  - Create a `.env.local` file in the root directory.
+  - Add your environment variables in the format `KEY=VALUE`.
+  - Restart the development server to apply the changes.
+
+#### Building for production:
+  - Run the build command:
+  ```bash
+  npm run build
+  # or
+  yarn build
+  # or
+  pnpm build
+  ```
+  - Start the production server:
+  ```bash
+  npm run start
+  # or
+  yarn start
+  # or
+  pnpm start
+  ```
+</details>
+
+## ✨ Features
+
+- 🎬 **Video Editing Mastery**: Learn storytelling through video, from shooting basics to advanced editing with Premiere Pro and Final Cut.
+- 🎨 **Graphic Design Pro**: Master color, layout, and branding with industry-standard tools like Photoshop and Illustrator.
+- 🤖 **AI for Creatives**: Discover how AI is transforming content creation with tools like MidJourney, ChatGPT, and Runway ML.
+- ✉️ **Contact Form**: A simple form to send us a direct message.
+- 📱 **Responsive Design**: Fully responsive layout for seamless viewing on any device.
+- ⚙️ **React Scroll**: Smooth navigation using React Scroll for better user experience.
+## 🚀 Technologies Used
+
+| Technology   | Link                                                                      |
+| :----------- | :------------------------------------------------------------------------ |
+| Next.js      | [https://nextjs.org/](https://nextjs.org/)                               |
+| React        | [https://reactjs.org/](https://reactjs.org/)                             |
+| Tailwind CSS | [https://tailwindcss.com/](https://tailwindcss.com/)                     |
+| TypeScript   | [https://www.typescriptlang.org/](https://www.typescriptlang.org/)       |
+| React Hook Form   | [https://react-hook-form.com/](https://react-hook-form.com/)       |
+| React Icons   | [https://react-icons.github.io/react-icons](https://react-icons.github.io/react-icons)       |
+| React Scroll  | [https://www.npmjs.com/package/react-scroll](https://www.npmjs.com/package/react-scroll)       |
+| Swiper   | [https://swiperjs.com/](https://swiperjs.com/)       |
+| Sonner  | [https://sonner.emilkowalski.com/](https://sonner.emilkowalski.com/)       |
+## 🤝 Contributing
+
+We welcome contributions to Johnny Tech Academy! Here’s how you can help:
+
+- 🐛 **Report Bugs**: Submit detailed bug reports to help us improve.
+- 💡 **Suggest Features**: Propose new features and enhancements.
+- 🛠️ **Submit Pull Requests**: Contribute code improvements and fixes.
+
+Follow these steps to contribute:
+
+1.  Fork the repository.
+2.  Create a new branch for your feature or fix.
+3.  Commit your changes with clear, concise messages.
+4.  Submit a pull request to the main branch.
+
+## 📜 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## 🧑‍💻 Author Info
+
+- **Author**: [Skido600](/* Add Author Github */)
+  - Social Media:
+    - Twitter: [Add Twitter Profile](/* Add Twitter Profile */)
+    - LinkedIn: [Add LinkedIn Profile](/* Add LinkedIn Profile */)
+    - Website: [Add Website](/* Add Website */)
+
+---
+
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
+[![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](http://shields.io/)
+[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/skido600)
+[![Readme was generated by Dokugen](https://img.shields.io/badge/Readme%20was%20generated%20by-Dokugen-brightgreen)](https://www.npmjs.com/package/dokugen)
