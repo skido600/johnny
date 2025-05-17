@@ -3,7 +3,7 @@ import "./globals.css";
 import { Toaster } from "sonner";
 export const metadata: Metadata = {
   metadataBase: new URL("https://johnny-tech-academy.vercel.app/"),
-  title: "Johnny Tech Academy|Video|Graphic Design|AI",
+  title: "Johnny Tech Academy |Video|Graphic Design|AI",
   description:
     "Johnny Tech offers  Academy  hands-on creative courses in video editing, graphic design, and AI tools. Learn storytelling, design principles, and cutting-edge AI workflows using tools like Premiere Pro, Photoshop, MidJourney, and ChatGPT.",
 
@@ -20,6 +20,8 @@ export const metadata: Metadata = {
     "ChatGPT",
     "MidJourney",
     "Academy",
+    "Anambra",
+    "Onitsha",
   ].join(", "),
   robots: "index, follow",
   icons: [
