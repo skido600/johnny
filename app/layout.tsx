@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     images: [
       {
-        url: "/https://johnny-tech-academy.vercel.app/opengraph-image.png",
+        url: "/opengraph-image.png",
         width: 1200,
         height: 630,
       },
