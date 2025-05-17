@@ -1,8 +1,10 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { FaPaperPlane } from "react-icons/fa";
 import { toast } from "sonner";
+import emailjs from "emailjs-com";
+import Loader from "../helper/Loader";
 
 type FormData = {
   name: string;
@@ -17,11 +19,31 @@ function Contact_cli() {
     reset,
     formState: { isSubmitSuccessful },
   } = useForm<FormData>();
-
+  const [loader, setloader] = useState(false);
   const onSubmit = (data: FormData) => {
-    console.log("Form submitted:", data);
-    toast.success("Message sent successfully!");
-    reset();
+    const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID as string;
+    const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID as string;
+    const publicKey = process.env.NEXT_PUBLIC_PUBLIC_KEY as string;
+
+    const templateParams = {
+      from_name: data.name,
+      from_email: data.email,
+      message: data.message,
+    };
+    setloader(true);
+    emailjs
+      .send(serviceId, templateId, templateParams, publicKey)
+      .then(() => {
+        toast.success("Message sent successfully!");
+        reset();
+      })
+      .catch((error) => {
+        console.error("EmailJS error:", error);
+        toast.error("Failed to send message. Please try again.");
+      })
+      .finally(() => {
+        setloader(false);
+      });
   };
 
   const onError = () => {
@@ -75,15 +97,19 @@ function Contact_cli() {
           </div>
         </div>
         <div className="mt-6">
-          <button
-            type="submit"
-            className="w-full flex justify-center  items-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-[#314C2D] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500">
-            <FaPaperPlane className="mr-2 h-4 w-4" />
-            Send Message
-          </button>
+          {loader ? (
+            <Loader />
+          ) : (
+            <button
+              type="submit"
+              className="w-full flex justify-center items-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-[#314C2D] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500">
+              <FaPaperPlane className="mr-2 h-4 w-4" />
+              Send Message
+            </button>
+          )}
         </div>
         {isSubmitSuccessful && (
-          <div className="mt-4 p-3 bg-green-50  rounded-md">
+          <div className="mt-4 p-3 bg-green-500 rounded-md">
             Thank you for reaching out. I&apos;ll get back to you soon.
           </div>
         )}

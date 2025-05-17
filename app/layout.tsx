@@ -2,16 +2,16 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Toaster } from "sonner";
 
+// aGUnIMO43;
 export const metadata: Metadata = {
   metadataBase: new URL("https://johnny-tech-academy.vercel.app/"),
   title: "Johnny Tech Academy|Video|Graphic Design|AI",
-
   description:
-    "Johnny Tech offers hands-on creative courses in video editing, graphic design, and AI tools. Learn storytelling, design principles, and cutting-edge AI workflows using tools like Premiere Pro, Photoshop, MidJourney, and ChatGPT.",
+    "Johnny Tech offers  Academy  hands-on creative courses in video editing, graphic design, and AI tools. Learn storytelling, design principles, and cutting-edge AI workflows using tools like Premiere Pro, Photoshop, MidJourney, and ChatGPT.",
 
   keywords: [
     "Johnny Tech",
-    " creative",
+    "creative",
     "video editing",
     "graphic design",
     "storytellin",
@@ -20,8 +20,8 @@ export const metadata: Metadata = {
     "Portfolio",
     "Photoshop",
     "ChatGPT",
-    " MidJourney",
-    " Academy",
+    "MidJourney",
+    "Academy",
   ].join(", "),
   robots: "index, follow",
   icons: [
@@ -58,6 +58,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta
+          name="google-site-verification"
+          content="ylme1U00H2Xv3y8l8ntAU_4eP6RWmtNPztYXMeMfXjs"
+        />
+      </head>
       <body>
         <Toaster position="top-center" />
         {children}
