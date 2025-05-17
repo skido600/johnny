@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Toaster } from "sonner";
-
-// aGUnIMO43;
 export const metadata: Metadata = {
   metadataBase: new URL("https://johnny-tech-academy.vercel.app/"),
   title: "Johnny Tech Academy|Video|Graphic Design|AI",
